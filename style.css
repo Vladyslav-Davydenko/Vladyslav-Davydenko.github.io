@@ -1,0 +1,138 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --bg-color: #fafbff;
+
+  --primary-color: white;
+  --secondary-color: #5932ea;
+  --secondary-1: #f5f5f5;
+  --pagin-border: 1px solid #eeeeee;
+
+  --text-primary-color: #292d32;
+  --text-secondary-color: #9197b3;
+  --text-secondary-light-color: #b5b7c0;
+  --text-green: #16c098;
+
+  --num-color: #404b52;
+
+  --red: #df0404;
+  --green: #00b087;
+  --red-light: #ffc5c5;
+  --green-light: #16c09861;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background-color: var(--primary-color);
+  box-shadow: 11px 7px 40px -16px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  max-width: 300px;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar__logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.sidebar__logo__title {
+  padding-left: 1rem;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.sidebar__logo__version {
+  color: var(--text-secondary-color);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.sidebar__profile {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.sidebar__profile__avatar {
+  border-radius: 50%;
+}
+
+.sidebar__list {
+  list-style: none;
+}
+
+.sidebar__list__link {
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.sidebar__list__link:hover {
+  background-color: var(--secondary-color);
+  color: var(--secondary-1);
+}
+
+.sidebar__list__link:hover.link--inactive {
+  background-image: url("/assets/icons/greater-white.svg");
+}
+
+/* CONTENT */
+
+.content {
+  padding: 2rem 4rem;
+}
+
+.content__greetings {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+/* MODIFIERS */
+
+.text--black {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.text--gray {
+  color: var(--text-secondary-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.text--normal {
+  font-weight: 400;
+}
+
+.link--inactive {
+  background-image: url("/assets/icons/greater.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}

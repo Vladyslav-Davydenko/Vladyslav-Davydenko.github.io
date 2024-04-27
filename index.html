@@ -49,7 +49,9 @@
             <span class="sidebar__logo__version">v.01</span>
           </div>
           <ul class="sidebar__list">
-            <li class="sidebar__list__link text--gray link--icon link--active">
+            <li
+              class="sidebar__list__link text--md text--gray link--icon link--active"
+            >
               <div class="sidebar__list__link__icon">
                 <svg
                   width="24px"
@@ -92,7 +94,7 @@
               </div>
               <p>Dashboard</p>
             </li>
-            <li class="sidebar__list__link text--gray link--icon">
+            <li class="sidebar__list__link text--md text--gray link--icon">
               <div class="sidebar__list__link__icon">
                 <svg
                   viewBox="0 0 24 24"
@@ -151,7 +153,7 @@
               </div>
               <p>Product</p>
             </li>
-            <li class="sidebar__list__link text--gray link--icon">
+            <li class="sidebar__list__link text--md text--gray link--icon">
               <div class="sidebar__list__link__icon">
                 <svg
                   viewBox="0 0 24 24"
@@ -203,7 +205,7 @@
               </div>
               <p>Customers</p>
             </li>
-            <li class="sidebar__list__link text--gray link--icon">
+            <li class="sidebar__list__link text--md text--gray link--icon">
               <div class="sidebar__list__link__icon">
                 <svg
                   viewBox="0 0 24 24"
@@ -259,7 +261,7 @@
               </div>
               <p>Income</p>
             </li>
-            <li class="sidebar__list__link text--gray link--icon">
+            <li class="sidebar__list__link text--md text--gray link--icon">
               <div class="sidebar__list__link__icon">
                 <svg
                   viewBox="0 0 24 24"
@@ -299,7 +301,7 @@
               </div>
               <p>Promote</p>
             </li>
-            <li class="sidebar__list__link text--gray link--icon">
+            <li class="sidebar__list__link text--md text--gray link--icon">
               <div class="sidebar__list__link__icon">
                 <svg
                   viewBox="0 0 24 24"
@@ -338,14 +340,135 @@
             class="sidebar__profile__avatar"
           />
           <div class="sidebar__profile_text">
-            <p class="text--black">Evano</p>
-            <p class="text--gray text--normal">Project manager</p>
+            <p class="text--md text--black">Evano</p>
+            <p class="text--md text--gray text--normal">Project manager</p>
           </div>
         </div>
       </nav>
       <section class="content">
         <h2 class="content__greetings">Hello Evano 👋🏼,</h2>
-        <table class="content__table"></table>
+        <div class="content__container">
+          <div class="content__container__header">
+            <div class="content__container__header__text">
+              <h3 class="text--black text--lg">All Customers</h3>
+              <p class="text--md text--green">Active Members</p>
+            </div>
+            <input
+              class="content__container__header__search text--sm"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search"
+            />
+          </div>
+          <table class="content__container__table">
+            <tr>
+              <th>Customer Name</th>
+              <th>Company</th>
+              <th>Phone Number</th>
+              <th>Email</th>
+              <th>Country</th>
+              <th class="text--center">Status</th>
+            </tr>
+            <tr class="text--md">
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="text--center">
+                <div class="content__container__table__status status--active">
+                  Active
+                </div>
+              </td>
+            </tr>
+            <tr class="text--md">
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="text--center">
+                <div class="content__container__table__status status--inactive">
+                  Inactive
+                </div>
+              </td>
+            </tr>
+            <tr class="text--md">
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="text--center">
+                <div class="content__container__table__status status--inactive">
+                  Inactive
+                </div>
+              </td>
+            </tr>
+            <tr class="text--md">
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="text--center">
+                <div class="content__container__table__status status--inactive">
+                  Inactive
+                </div>
+              </td>
+            </tr>
+            <tr class="text--md">
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="text--center">
+                <div class="content__container__table__status status--inactive">
+                  Inactive
+                </div>
+              </td>
+            </tr>
+            <tr class="text--md">
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="text--center">
+                <div class="content__container__table__status status--inactive">
+                  Inactive
+                </div>
+              </td>
+            </tr>
+            <tr class="text--md">
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="text--center">
+                <div class="content__container__table__status status--inactive">
+                  Inactive
+                </div>
+              </td>
+            </tr>
+            <tr class="text--md">
+              <td>Jane Cooper</td>
+              <td>Microsoft</td>
+              <td>(225) 555-0118</td>
+              <td>jane@microsoft.com</td>
+              <td>United States</td>
+              <td class="text--center">
+                <div class="content__container__table__status status--inactive">
+                  Inactive
+                </div>
+              </td>
+            </tr>
+          </table>
+          <div class="content__container__pagination"></div>
+        </div>
       </section>
     </main>
   </body>
